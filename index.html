@@ -7,11 +7,58 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <section>
-        <div class="heading">
-            <h1 class="title">Survey Form</h1>
+    <main>
+        <header>
+            <h2 class="title">survey form</h2>
             <p>feel free to answer the questions below based on your own experience and opinion. if you are not convienent in answering a particular question please skip it by answering "no". every answer would be very appreciated. thank you for your time.</p>
-        </div>
-    </section>
+        </header>
+        <form>
+            <section>
+                  <label for="name">Your Name</label><br>
+            <input type="text" placeholder="Enter your name" id="name" name="name"><br>
+            <label for="mail">Your Email Address</label><br>
+            <input type="text" placeholder="user@user.com" id="mail" name="mail"><br>
+            <label for="phoneNumber">Your Phone Number</label><br>
+            <input type="tel" placeholder="9999999999" id="phoneNumber" name="phoneNumber"><br>
+            <label for="city">Where do You Live?</label><br>
+            <select name="city" id="city">
+                <option value="Dehli">Delhi</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Vizag">Vizag</option>
+            </select><br>
+            <fieldset>
+                <legend>Age</legend>
+                <input type="radio" name="15-20"><label for="15-20">15-20</label><br>
+                <input type="radio" name="20-30"><label for="20-25">20-25</label><br>
+                <input type="radio" name="31-40"><label for="31-40">31-40</label><br>
+                <input type="radio" name="41-50"><label for="41-50">41-50</label><br>
+                <input type="radio" name="preferNot"><label for="preferNot">Prefer not to say</label><br>
+            </fieldset>
+            <p class="heading">How would you rate your proficiency in coding</p>
+            <input type="radio" name="beginner" id="beginner">
+            <label for="beginner">Beginner</label><br>
+            <input type="radio" name="intermediate" id="intermediate">
+            <label for="intermediate" checked>Intermediate</label><br>
+            <input type="radio" name="advance" id="advance">
+            <label for="advance">Advance</label><br>
+            </section>
+           <section >
+            <p class="heading">Have you Ever Appeared in any coding contest?</p>
+            <input type="radio" name="yes" id="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="no" id="no" checked>
+            <label for="no">No</label><br>
+            <p class="heading">Discuss what drives your passion for coding and ouline your aspirations in the field.</p>
+            <textarea name="passion" class="feedback"  rows="3"></textarea>
+            <p class="heading">What are some of the challenges you face while coding?</p>
+            <textarea name="challenges" class="feedback"  rows="3"></textarea>
+            <p class="heading">Please list the Data Structures you have a strong understanding of.</p>
+            <textarea name="strong" class="feedback"  rows="3"></textarea><br>
+            <button type="submit">Submit Form</button>
+
+           </section>
+          
+        </form>
+    </main>
 </body>
 </html>
